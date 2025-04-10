@@ -1,54 +1,54 @@
-# React + TypeScript + Vite
+# 💰 Cripto App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação React que consome a API do CoinGecko para listar, pesquisar e visualizar detalhes das principais criptomoedas do mercado. Tudo em tempo real, com paginação, formatação e responsividade!
 
-Currently, two official plugins are available:
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/your-gif-here.gif" width="100%" alt="Prévia do app">
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📊 Listagem das 100 maiores criptomoedas
+- 🔍 Busca por nome ou símbolo
+- 🔄 Paginação com carregamento incremental
+- 💸 Preço, volume e market cap formatados
+- 📈 Detalhes individuais das moedas
+- ⚙️ Integração com a API pública do [CoinGecko](https://www.coingecko.com/)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🧪 Tecnologias
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router](https://reactrouter.com/)
+- [CoinGecko API](https://www.coingecko.com/en/api)
+
+---
+
+## 📦 Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/ecalazans/cripto-app.git
+
+# Acesse o diretório
+cd cripto-app
+
+# Instale as dependências
+npm install
+
+# Inicie o projeto
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+O app vai rodar em http://localhost:5173
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🖼️ Preview
+<div align="center"> <img src="https://user-images.githubusercontent.com/your-screenshot-here.png" width="80%" alt="Prévia da aplicação" /> </div>
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## ⚠️ Limite da API
+ A API do CoinGecko possui limite de requisições por minuto e por página. Ao tentar acessar páginas além do permitido, a aplicação retorna uma mensagem amigável ao usuário. 😉
