@@ -10,9 +10,9 @@ Aplicação React que consome a API do CoinGecko para listar, pesquisar e visual
 
 ## 🚀 Funcionalidades
 
-- 📊 Listagem das 100 maiores criptomoedas
-- 🔍 Busca por nome ou símbolo
-- 🔄 Paginação com carregamento incremental
+- 📊 Listagem das 60 maiores criptomoedas
+- 🔍 Busca por nome
+- 🔄 Paginação com carregamento incremental de 10 em 10
 - 💸 Preço, volume e market cap formatados
 - 📈 Detalhes individuais das moedas
 - ⚙️ Integração com a API pública do [CoinGecko](https://www.coingecko.com/)
