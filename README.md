@@ -47,8 +47,5 @@ npm run dev
 
 O app vai rodar em http://localhost:5173
 
-## 🖼️ Preview
-<div align="center"> <img src="https://user-images.githubusercontent.com/your-screenshot-here.png" width="80%" alt="Prévia da aplicação" /> </div>
-
 ## ⚠️ Limite da API
  A API do CoinGecko possui limite de requisições por minuto e por página. Ao tentar acessar páginas além do permitido, a aplicação retorna uma mensagem amigável ao usuário. 😉
