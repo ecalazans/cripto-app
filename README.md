@@ -47,5 +47,7 @@ npm run dev
 
 O app vai rodar em http://localhost:5173
 
+---
+
 ## ⚠️ Limite da API
  A API do CoinGecko possui limite de requisições por minuto e por página. Ao tentar acessar páginas além do permitido, a aplicação retorna uma mensagem amigável ao usuário. 😉
